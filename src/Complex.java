@@ -26,4 +26,9 @@ public class Complex {
     public void setY(double y) {
         this.y = y;
     }
+
+    public String str(){
+        return y+"+"+x+"i";
+    }
+
 }
