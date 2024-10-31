@@ -1,34 +1,43 @@
 public class Complex {
 
-    private double x;
-    private double y;
+    private int x;
+    private int y;
 
     public Complex() {
     }
 
-    public Complex(double x, double y) {
+    public Complex(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public void setX(double x) {
+    public void setX(int x) {
         this.x = x;
     }
 
-    public double getY() {
+    public int getY() {
         return y;
     }
 
-    public void setY(double y) {
+    public void setY(int y) {
         this.y = y;
     }
 
     public String str(){
         return y+"+"+x+"i";
+    }
+
+    public int sum(Complex c){
+
+        int x = this.x+c.getX();
+
+        return 0;
+
+
     }
 
 }
