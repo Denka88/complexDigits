@@ -49,4 +49,13 @@ public class Complex {
 
     }
 
+    public Complex mul(Complex c){
+
+        int newX = this.x*c.getX() - this.y*c.getY();
+        int newY = this.x*c.getY() + c.getX()*this.y;
+
+        return new Complex(newX, newY);
+
+    }
+
 }

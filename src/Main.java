@@ -9,8 +9,9 @@ public class Main {
 
         Complex testSub = first.sub(second);
         System.out.println(testSub.str());
-        
-        
+
+        Complex testMul = first.mul(second);
+        System.out.println(testMul.str());
         
 
     }
