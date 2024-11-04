@@ -1,17 +1,17 @@
 public class Complex {
 
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
     public Complex() {
     }
 
-    public Complex(int x, int y) {
+    public Complex(double x, double y) {
         this.x = x;
         this.y = y;
     }
-
-    public int getX() {
+    
+    public double getX() {
         return x;
     }
 
@@ -19,7 +19,7 @@ public class Complex {
         this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
@@ -31,28 +31,37 @@ public class Complex {
         return x + " + " + y + "i";
     }
 
-    public Complex sum(Complex c){
+    public Complex sum(Complex complex){
 
-        int newX = this.x+c.getX();
-        int newY = this.y+c.getY();
+        double newX = this.x + complex.getX();
+        double newY = this.y + complex.getY();
 
         return new Complex(newX, newY);
         
     }
 
-    public Complex sub(Complex c){
+    public Complex sub(Complex complex){
 
-        int newX = this.x-c.getX();
-        int newY = this.y-c.getY();
+        double newX = this.x - complex.getX();
+        double newY = this.y - complex.getY();
 
         return new Complex(newX, newY);
 
     }
 
-    public Complex mul(Complex c){
+    public Complex mul(Complex complex){
 
-        int newX = this.x*c.getX() - this.y*c.getY();
-        int newY = this.x*c.getY() + c.getX()*this.y;
+        double newX = this.x * complex.getX() - this.y * complex.getY();
+        double newY = this.x * complex.getY() + complex.getX() * this.y;
+
+        return new Complex(newX, newY);
+
+    }
+
+    public Complex div(Complex complex){
+
+        double newX = ((this.x * complex.getX() + this.y * complex.getY()) / (Math.pow(complex.getX(), 2) + Math.pow(complex.getY(), 2)));
+        double newY = ((this.y * complex.getX() - this.x * complex.getY()) / (Math.pow(complex.getX(), 2) + Math.pow(complex.getY(), 2)));
 
         return new Complex(newX, newY);
 

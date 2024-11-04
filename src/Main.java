@@ -12,6 +12,9 @@ public class Main {
 
         Complex testMul = first.mul(second);
         System.out.println(testMul.str());
+
+        Complex testDiv = first.div(second);
+        System.out.println(testDiv.str());
         
 
     }
