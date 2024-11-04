@@ -28,16 +28,16 @@ public class Complex {
     }
 
     public String str(){
-        return y+"+"+x+"i";
+        return x + " + " + y + "i";
     }
 
-    public int sum(Complex c){
+    public Complex sum(Complex c){
 
-        int x = this.x+c.getX();
+        int newX = this.x+c.getX();
+        int newY = this.y+c.getY();
 
-        return 0;
-
-
+        return new Complex(newX, newY);
+        
     }
 
 }
