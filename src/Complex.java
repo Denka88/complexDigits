@@ -72,5 +72,11 @@ public class Complex {
         return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
         
     }
+    
+    public boolean equals(Complex complex){
+        
+        return this.absComplex() == complex.absComplex();
+        
+    }
 
 }
