@@ -15,7 +15,8 @@ public class Main {
 
         Complex testDiv = first.div(second);
         System.out.println(testDiv.str());
-        
 
+        System.out.println(testSum.absComplex());
+        
     }
 }

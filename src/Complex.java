@@ -66,5 +66,11 @@ public class Complex {
         return new Complex(newX, newY);
 
     }
+    
+    public double absComplex(){
+        
+        return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+        
+    }
 
 }
