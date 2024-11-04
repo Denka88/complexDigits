@@ -40,4 +40,13 @@ public class Complex {
         
     }
 
+    public Complex sub(Complex c){
+
+        int newX = this.x-c.getX();
+        int newY = this.y-c.getY();
+
+        return new Complex(newX, newY);
+
+    }
+
 }

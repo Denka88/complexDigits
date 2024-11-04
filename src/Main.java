@@ -3,10 +3,12 @@ public class Main {
 
         Complex first = new Complex(4, 3);
         Complex second = new Complex(2, 5);
-        
-        Complex testSum = first.sum(second);
 
+        Complex testSum = first.sum(second);
         System.out.println(testSum.str());
+
+        Complex testSub = first.sub(second);
+        System.out.println(testSub.str());
         
         
         
